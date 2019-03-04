@@ -1,0 +1,20 @@
+
+1. download JDK dari oracle website
+
+2. instal
+- ini instal ke c:\program foles\java\jdk..
+
+3. set env variable "path"oint ke c:\program files\java\jdk..\bin
+
+4. Compile 
+javac <nam file>.java
+
+5. Run
+java <nama file>
+
+Git command
+
+git clone
+git add*
+git commit -m "first commit"
+git push

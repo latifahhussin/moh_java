@@ -1,4 +1,18 @@
 
+method overloading
+- method nama sama, param x sama
+
+method overriding
+- replace method
+
+data Type
+---------
+Ada 2
+(1)primitive (start kecil). Ada 8 jenis
+(2)  bukan
+
+
+-------------------------------------------------
 1. download JDK dari oracle website
 
 2. instal
@@ -13,8 +27,11 @@ javac <nam file>.java
 java <nama file>
 
 Git command
+-----------
 
-git clone
-git add*
-git commit -m "first commit"
+git clone <url>
+ - copy dari repo github 
+git add *
+git commit -m "first commit" ---> first commit ini adalah catatan. Boleh ubah.
 git push
+  

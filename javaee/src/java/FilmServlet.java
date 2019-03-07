@@ -24,7 +24,11 @@ public class FilmServlet extends HttpServlet {
         PrintWriter out = response.getWriter(); //mesti kena import java.io.PrintWriter; - barulah boleh pakai out.print di bahagian bawah
         
         try{
-           con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sakila?useLegacyDatetimeCode=false&serverTimezone=America/New_York","root",""); 
+            // load driver
+            Class.forName("com.mysql.jdbc.Driver");
+            //Class.forName("com.mysql.cj.jdbc.Driver");
+           //con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sakila?useLegacyDatetimeCode=false&serverTimezone=America/New_York","root",""); 
+           con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sakila","root","");
            stmt = con.createStatement();
            String sql = "SELECT * FROM film";
            rs = stmt.executeQuery(sql);
